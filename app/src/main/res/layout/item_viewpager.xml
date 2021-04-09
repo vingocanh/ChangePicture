@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:id="@+id/lnViewPager"
+              android:layout_height="match_parent">
+
+    <FrameLayout android:layout_width="match_parent"
+                 android:layout_height="match_parent">
+
+
+        <ImageView android:layout_width="match_parent"
+                   android:scaleType="fitXY"
+                   android:id="@+id/ivHinhAnh"
+                   android:layout_height="match_parent"></ImageView>
+
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:orientation="horizontal"
+                      android:weightSum="5"
+                      android:layout_gravity="center"
+                      android:padding="10dp"
+                      android:layout_height="wrap_content">
+
+            <LinearLayout android:layout_width="0dp"
+                          android:layout_weight="2.5"
+                          android:padding="6dp"
+                          android:orientation="vertical"
+
+                          android:layout_marginRight="5dp"
+                          android:id="@+id/lnCamera"
+                          android:layout_height="wrap_content">
+                <ImageView android:layout_width="match_parent"
+                           android:src="@drawable/ic_camera"
+                           android:id="@+id/ivCamera"
+                           android:layout_height="match_parent">
+                </ImageView>
+
+                <TextView android:layout_width="match_parent"
+                          android:text="Camera"
+                          android:textColor="#FFFFFF"
+                          android:gravity="center"
+                          android:id="@+id/tvCamera"
+                          android:textStyle="bold"
+                          android:textSize="16sp"
+                          android:layout_height="wrap_content"></TextView>
+
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="0dp"
+                          android:layout_weight="2.5"
+                          android:padding="6dp"
+                          android:id="@+id/lFolder"
+                          android:layout_marginLeft="5dp"
+                          android:orientation="vertical"
+                          android:layout_height="wrap_content">
+                <ImageView android:layout_width="match_parent"
+                           android:src="@drawable/ic_select_large"
+                           android:id="@+id/ivFolder"
+                           android:layout_height="match_parent">
+                </ImageView>
+
+                <TextView android:layout_width="match_parent"
+                          android:text="Folder"
+                          android:textColor="#FFFFFF"
+                          android:gravity="center"
+                          android:id="@+id/tvFolder"
+                          android:textStyle="bold"
+                          android:textSize="16sp"
+                          android:layout_height="wrap_content"></TextView>
+
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+
+
+</LinearLayout>

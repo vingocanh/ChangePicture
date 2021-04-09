@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Change wallpaper"
+        android:id="@+id/itemChangeHNen"
+    />
+
+    <item
+            android:title="Change wallpaper Lock Screen"
+            android:id="@+id/itemKhoa"
+    />
+
+    <item
+            android:title="Change Contacts"
+            android:id="@+id/itemChangeDBa"
+    />
+
+</menu>

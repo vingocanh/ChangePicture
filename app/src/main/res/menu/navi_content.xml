@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+        <item
+            android:title="Home"
+            android:icon="@drawable/ic_home"
+            android:id="@+id/itemHome"
+        />
+        <item
+                android:title="Favorite photo"
+                android:icon="@drawable/ic_favorite"
+                android:id="@+id/itemYeuThich"
+        />
+    </group>
+
+    <group>
+        <item
+                android:title="Setting"
+                android:icon="@drawable/ic_baseline_settings_24"
+                android:id="@+id/itemCaiDai"
+        />
+        <item
+                android:title="Share"
+                android:icon="@drawable/ic_share"
+                android:id="@+id/itemCSe"
+        />
+
+        <item
+                android:title="Information"
+                android:icon="@drawable/ic_info"
+                android:id="@+id/itemThongtTin"
+        />
+    </group>
+    <group>
+        <item
+                android:title="Log out"
+                android:icon="@drawable/ic_power_settings_new_24"
+                android:id="@+id/itemDangXuat"
+        />
+    </group>
+
+
+
+</menu>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:id="@+id/lnFolder"
+              android:orientation="vertical"
+              android:background="#252525"
+              android:layout_height="match_parent">
+
+
+<!--    <include-->
+<!--        layout="@layout/navi_toolbar"/>-->
+
+
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:orientation="horizontal"
+                      android:padding="10dp"
+                      android:layout_marginTop="50dp"
+                      android:weightSum="5"
+                      android:layout_marginRight="6dp"
+                      android:layout_marginLeft="6dp"
+                      android:layout_marginBottom="6dp"
+                      android:layout_height="wrap_content">
+            <TextView android:layout_width="0dp"
+                      android:layout_weight="2.5"
+                      android:padding="6dp"
+                      android:gravity="center"
+                      android:textColor="#FFF"
+                      android:textStyle="bold"
+                      android:textSize="20sp"
+                      android:id="@+id/tvNature"
+                      android:text="Nature"
+                      android:layout_height="wrap_content"></TextView>
+
+            <TextView android:layout_width="0dp"
+                      android:layout_weight="2.5"
+                      android:padding="6dp"
+                      android:gravity="center"
+                      android:textColor="#FFF"
+                      android:textStyle="bold"
+                      android:textSize="20sp"
+                      android:id="@+id/tvAnime"
+                      android:text="Love"
+                      android:layout_height="wrap_content"></TextView>
+
+        </LinearLayout>
+
+        <FrameLayout android:layout_width="match_parent"
+                     android:id="@+id/flFolder"
+                     android:layout_height="match_parent">
+        </FrameLayout>
+
+
+
+</LinearLayout>

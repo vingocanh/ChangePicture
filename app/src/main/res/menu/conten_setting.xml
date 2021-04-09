@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+            android:title="Favorite photo"
+            android:id="@+id/itemLike"
+    />
+
+    <item
+            android:title="Set time"
+            android:id="@+id/itemsetTGian"
+    />
+
+</menu>

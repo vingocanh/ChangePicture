@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:background="#fff"
+              android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:id="@+id/rlShowImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:padding="10dp"
+                android:background="@color/pacgroud"
+                android:orientation="horizontal">
+            <TextView android:layout_width="match_parent"
+                      android:text="ĐĂNG KÝ"
+                      android:textSize="25sp"
+                      android:padding="9dp"
+                      android:gravity="center"
+                      android:textStyle="bold"
+                      android:textColor="#FFF"
+                      android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+<!--        <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                android:id="@+id/civAVT"-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_height="100dp"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:layout_marginTop="25dp"-->
+<!--                android:src="@drawable/avatar"-->
+<!--                 />-->
+
+<!--        <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@id/civAVT"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:padding="5dp"-->
+<!--                android:text="Ảnh đại diện"-->
+<!--                android:textColor="@color/black" />-->
+
+<!--        <ImageView-->
+<!--                android:id="@+id/ivChooseImage"-->
+<!--                android:layout_width="25dp"-->
+<!--                android:layout_height="25dp"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:layout_marginTop="25dp"-->
+<!--                android:background="@drawable/custom_spinner"-->
+<!--                android:elevation="4dp"-->
+<!--                android:padding="4dp"-->
+<!--                android:scaleType="centerCrop"-->
+<!--                android:src="@drawable/ic_baseline_camera_alt_24" />-->
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/rlHoTen"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/rlShowImage"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_et"
+            android:padding="8dp">
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:id="@+id/tvsHoTen"
+                android:src="@drawable/icon_user"
+        >
+        </ImageView>
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tetHoTen"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/tvsHoTen"
+                android:background="@drawable/bg_edit_text_login"
+                android:hint="Họ Tên"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textSize="15dp"
+                android:textStyle="italic" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/rlUserName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/rlShowImage"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_et"
+            android:padding="8dp">
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:id="@+id/tvsUserName"
+                android:src="@drawable/ic_user"
+        >
+        </ImageView>
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tetUser"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/tvsUserName"
+                android:background="@drawable/bg_edit_text_login"
+                android:hint="User name"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textSize="15dp"
+                android:textStyle="italic" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+            android:id="@+id/rlPass"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/rlShowImage"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_et"
+            android:padding="8dp">
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:id="@+id/tvsPass"
+                android:src="@drawable/ic_lock"
+        >
+        </ImageView>
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tetPass"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/tvsPass"
+                android:background="@drawable/bg_edit_text_login"
+                android:hint="PassWord"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textSize="15dp"
+                android:textStyle="italic" />
+
+    </RelativeLayout>
+
+<!--    <Spinner android:layout_width="" android:layout_height=""-->
+<!--    <RelativeLayout-->
+<!--            android:id="@+id/rlViTri"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:layout_below="@+id/rlShowImage"-->
+<!--            android:layout_marginHorizontal="40dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:background="@drawable/edit_et"-->
+<!--            android:padding="8dp">-->
+
+<!--        <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:id="@+id/tvsvTri"-->
+<!--                android:src="@drawable/ic_baseline_location_on_24"-->
+<!--        >-->
+<!--        </ImageView>-->
+
+<!--        <com.google.android.material.textfield.TextInputEditText-->
+<!--                android:id="@+id/tetViTri"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:layout_toRightOf="@id/tvsvTri"-->
+<!--                android:background="@drawable/bg_edit_text_login"-->
+<!--                android:hint="Vị trí"-->
+<!--                android:inputType="text"-->
+<!--                android:maxLines="1"-->
+<!--                android:textSize="15dp"-->
+<!--                android:textStyle="italic" />-->
+
+<!--    </RelativeLayout>-->
+    <RelativeLayout
+            android:id="@+id/rlNgaySinh"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/rlShowImage"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_et"
+            android:padding="8dp">
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:id="@+id/tvsNgaySinh"
+                android:src="@drawable/ic_calendar"
+        >
+        </ImageView>
+
+        <EditText
+                android:id="@+id/etNgaySinh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/tvsNgaySinh"
+                android:background="@drawable/bg_edit_text_login"
+                android:hint="Ngày sinh"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textSize="15dp"
+                android:textStyle="italic" />
+
+    </RelativeLayout>
+    <RelativeLayout
+            android:id="@+id/rlMail"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/rlShowImage"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_et"
+            android:padding="8dp">
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:id="@+id/tvsemail"
+                android:src="@drawable/ic_baseline_email_24"
+        >
+        </ImageView>
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tetMail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/tvsemail"
+                android:background="@drawable/bg_edit_text_login"
+                android:hint="Email"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textSize="15dp"
+                android:textStyle="italic" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/rlGTinh"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/rlShowImage"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_et"
+            android:padding="8dp">
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:id="@+id/ivGTinh"
+                android:src="@drawable/ic_gender_fluid"
+        >
+        </ImageView>
+        <TextView
+                android:id="@+id/tvGTinh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/ivGTinh"
+                android:text="Giới tính"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textSize="15dp"
+                android:textStyle="italic" />
+
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content">
+
+        <RadioGroup
+                android:id="@+id/rdiosex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+            <RadioButton
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nam"
+                    android:textSize="17sp"
+                    android:id="@+id/rdionam"/>
+            <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nữ"
+                    android:textSize="17sp"
+                    android:id="@+id/rdionu"/>
+
+        </RadioGroup>
+    </RelativeLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:paddingTop="40dp">
+                <Button
+                        android:id="@+id/btnRegister"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Đăng ký"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:textColor="#fff"
+                        android:background="@drawable/button_login"/>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/btnRegister"
+                        android:layout_margin="10dp"
+                        android:gravity="center">
+
+                    <TextView
+                            android:id="@+id/tvRegister"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Bạn đã có tài khoản?"
+                            android:textColor="@color/gray_color_graph"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                                android:id="@+id/tvLogin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:text="Đăng nhập"
+                                android:textColor="@color/pacgroud"
+                                android:textSize="15sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+</LinearLayout>
